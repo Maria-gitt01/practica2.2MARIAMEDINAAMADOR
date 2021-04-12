@@ -1,5 +1,5 @@
 #NOMBRE: MARIA MEDINA AMADOR
-#CARRERA: ING INFORMATICA
+#CARRERA: INFORMATICA
 #MATERIA DESARR. DE APP WEB
 #PRACTICA 2.2
 
@@ -8,7 +8,7 @@ fecha=fecha.lower()
 diasemana=fecha [0:fecha.find(',') ]
 dianro=int(fecha[fecha.find(',')+1:fecha.find('/') ])
 mesnro=int(fecha[fecha.find('/')+1:])
-if dianro>31 or mesnor>12:
+if dianro>31 or mesnro<12:
     print("Fecha incorrecta")
 else:
     if diasemana in "lunes,martes,miercoles":
@@ -35,3 +35,4 @@ else:
         print("Fecha incorrecta")
 
 print("Fin del programa")
+
